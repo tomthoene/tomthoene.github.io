@@ -1,5 +1,17 @@
 {
     "name": "Test",
-    "start_url": "https://tomthoene.github.io/",
+    "start_url": "/",
+    "icons": [
+        {
+          "src": "/icons/big.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        },
+        {
+          "src": "/icons/smal.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ],
     "display": "minimal-ui"
 }
