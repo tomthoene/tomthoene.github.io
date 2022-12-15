@@ -8,6 +8,7 @@
 </head>
 <body style="background-color: gray;">
     <img id="img" src="https://bbbha40h7.videoconference.iserv.eu/bigbluebutton/presentation/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/2f657ef6357decc844ce722f37359dddc7793622-1671110813970/svg/1" alt="">
+    <p id="number">1</p>
     <button onclick="back()">Back</button>
     <button onclick="next()">Next</button>
     <script>
@@ -25,6 +26,7 @@
         }
         function update() {
             document.getElementById("img").src = link + seite;
+            document.getElementById("number").innerHTML = seite;
         }
     </script>
 </body>
