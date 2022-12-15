@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorschau</title>
+</head>
+<body style="background-color: gray;">
+    <img id="img" src="https://bbbha40h7.videoconference.iserv.eu/bigbluebutton/presentation/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/2f657ef6357decc844ce722f37359dddc7793622-1671110813970/svg/1" alt="">
+    <button onclick="back()">Back</button>
+    <button onclick="next()">Next</button>
+    <script>
+        let link = "https://bbbha40h7.videoconference.iserv.eu/bigbluebutton/presentation/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/2f657ef6357decc844ce722f37359dddc7793622-1671110813970/svg/"
+        let seite = 1
+        function next() {
+            seite += 1
+            console.log(seite)
+            update()
+        }
+        function back() {
+            seite -= 1
+            console.log(seite)
+            update()
+        }
+        function update() {
+            document.getElementById("img").src = link + seite;
+        }
+    </script>
+</body>
+</html>
