@@ -26,14 +26,23 @@
         border-top-right-radius: 7px;
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
+        margin: 10px;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        height: 100px;
       }
     </style>
   </head>
   <body style="background-color: gray">
     <img id="img" />
-    <p id="number">1</p>
-    <button onclick="back()">Back</button>
-    <button onclick="next()">Next</button>
+    <div>
+      <button onclick="back()">Back</button>
+      <p id="number">1</p>
+      <button onclick="next()">Next</button>
+    </div>
+
     <script>
       let link =
         "https://bbbha40h7.videoconference.iserv.eu/bigbluebutton/presentation/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/0b2c8e0aad3b8e076a9a07d7a15814272b91ebbe-1671110224938/2f657ef6357decc844ce722f37359dddc7793622-1671110813970/svg/";
