@@ -1,0 +1,77 @@
+body {
+  background-image: url("https://4kwallpapers.com/images/wallpapers/3d-background-abstract-background-purple-background-spiral-4480x2520-8845.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.main {
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.glass,
+span {
+  padding: 3px;
+  text-align: center;
+  font-size: large;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.712);
+  font-size: large;
+}
+.text {
+    font-size: 50px !important;
+}
+.glass {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.07) 100%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.39);
+  background-color: #ffffff00;
+  border-color: rgba(255, 255, 255, 0.31);
+  border-width: 2px;
+  border-style: solid;
+  margin: 10px;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+    width: 45%;
+}
+.green:hover{
+    background-color:#05842560;
+}
+.red:hover{
+    background-color:#84050560;
+}
+.display {
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="main"] {
+      width: 100% !important;
+    }
+    [class*="glass"] {
+        width: 100% !important;
+    }
+    [class*="text"] {
+        font-size: 30px !important;
+    }
+  }
