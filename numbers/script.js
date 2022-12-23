@@ -5,13 +5,21 @@ let result = 0
 let numbers = []
 let firstNumber = 0
 
-next()
+start()
+
+function start () {
+    refreshControls(false)
+    card = 0
+    result = 0
+    next()
+}
 function next (yes) { 
     let numbers = []
     card ++
     if (card > bits) {
         document.getElementById("text").innerHTML = result;
         document.getElementById("h1").innerHTML = "Ergebnis:";
+        refreshControls(true)
         return
     }
     
@@ -36,4 +44,21 @@ function no () {
 function toBinary (input, bitIndex) {
     let binary = input.toString(2) 
     return binary[binary.length - bitIndex];
+}
+
+function refreshControls (refresh) {
+    const buttons = document.getElementsByClassName("controls")
+    const refreshButton = document.getElementById("refresh")
+    for (button of buttons) {
+            if (refresh) {
+                button.style.display = "none"
+            } else {
+                button.style.display = "block"
+            }
+        }
+    if (refresh) {
+        refreshButton.style.display = "block"
+    } else {
+        refreshButton.style.display = "none"
+    }
 }

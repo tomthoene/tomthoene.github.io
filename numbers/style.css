@@ -60,6 +60,9 @@ button {
 .red:hover{
     background-color:#84050560;
 }
+.white:hover{
+  background-color:#ffffff60;
+}
 .display {
     width: 100%;
 }
