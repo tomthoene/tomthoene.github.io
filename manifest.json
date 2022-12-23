@@ -7,7 +7,7 @@
     "start_url": "/numbers",
     "icons": [
       {
-        "src": "/icons/icon",
+        "src": "/numbers/icons/icon",
         "type": "image/png",
         "sizes": "512x512"
       }
