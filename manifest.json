@@ -3,6 +3,13 @@
     "theme_color": "#2196f3",
     "background_color": "#2196f3",
     "display": "fullscreen",
-    "scope": "/",
-    "start_url": "/"
+    "scope": "/numbers",
+    "start_url": "/numbers",
+    "icons": [
+      {
+        "src": "/icons/icon",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
   }
