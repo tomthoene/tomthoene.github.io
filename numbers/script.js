@@ -5,7 +5,7 @@ let result = 0;
 let numbers = [];
 let firstNumber = 0;
 
-document.getElementById("text").innerHTML = "Denke an eine Zahl zwischen 0 und " + maxNumber
+document.getElementById("text").innerHTML = "Denke an eine Zahl zwischen 0 und " + maxNumber + " Fragen: " + bits
 refreshControls(true, true);
 
 function start() {
