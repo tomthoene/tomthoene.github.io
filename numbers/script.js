@@ -18,6 +18,7 @@ function start() {
 function next(yes) {
   let numbers = [];
   card++;
+  document.getElementById('info').innerHTML = card + "/" + bits;
   if (card > bits) {
     document.getElementById("text").innerHTML = result;
     document.getElementById("h1").innerHTML = "Ergebnis:";
@@ -58,6 +59,7 @@ function refreshControls(refresh, start) {
   }
   if (refresh) {
     refreshButton.style.display = "block";
+    document.getElementById('info').innerHTML = ""
     if (start) {
       symbol.innerHTML = " play_arrow ";
     } else {
