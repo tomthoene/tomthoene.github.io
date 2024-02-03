@@ -1,4 +1,4 @@
-let maxNumber = 100;
+let maxNumber = 2500;
 let bits = maxNumber.toString(2).length;
 let card = 0;
 let result = 0;

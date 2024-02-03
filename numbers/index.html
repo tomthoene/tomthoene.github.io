@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="../manifest.json">
+    <link rel="manifest" href="../manifest.json" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,17 +15,36 @@
   <body>
     <h1 id="h1"></h1>
     <h2 id="info"></h2>
-    <div class="main vertical-center">
-      <div class="glass display text" id="text">Error</div>
-      <button class="glass green controls" style="display: block;" onclick="yes()">
-        <span class="material-symbols-outlined"> done </span>
-      </button>
-      <button class="glass red controls" style="display: block;" onclick="no()">
-        <span class="material-symbols-outlined"> close </span>
-      </button>
-      <button class="glass white" style="width: 100%; display: none;" id="refresh" onclick="start()">
-        <span class="material-symbols-outlined" id="symbol"> play_arrow </span>
-      </button>
+
+    <div id="main">
+      <div class="glass" id="text">Error</div>
+      <div class="buttons-center">
+        <button
+          class="glass green controls"
+          style="display: block"
+          onclick="yes()"
+        >
+          <span class="material-symbols-outlined"> done </span>
+        </button>
+        <button
+          class="glass red controls"
+          style="display: block"
+          onclick="no()"
+        >
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        
+        <button
+          class="glass white"
+          style="width: 100%; display: none"
+          id="refresh"
+          onclick="start()"
+        >
+          <span class="material-symbols-outlined" id="symbol">
+            play_arrow
+          </span>
+        </button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
